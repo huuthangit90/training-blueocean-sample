@@ -4,6 +4,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh 'echo Hello World!'
+        archiveArtifacts 'test'
       }
     }
   }
